@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+*.tmp
+*.zip
+
+# Private local material
+private/
+local/
+notes/
+knowledge-cards/
+
+# Keep personal account assets out of the public repository
+personal-*
+private-*
+account-assets*
+business-assets*
+creator-notes*
