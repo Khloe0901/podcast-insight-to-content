@@ -33,29 +33,39 @@ The skill will help you:
 - avoid over-quoting or presenting someone else's idea as your own
 - turn scattered inspiration into reusable content assets
 
-## Installable Skill Folder
+## Repository Structure
 
-The actual Codex skill lives in:
+The repository root is directly installable by skill platforms that expect `SKILL.md` at the top level:
 
 ```text
-podcast-insight-to-content/
 ├── SKILL.md
+├── README.md
+├── LICENSE
 ├── agents/
 │   └── openai.yaml
 ├── assets/
 │   └── creator-profile-template.md
-└── references/
-    ├── creator-profile.md
-    └── workflow.md
+├── references/
+│   ├── creator-profile.md
+│   └── workflow.md
+└── podcast-insight-to-content/  # Legacy copy retained for compatibility
 ```
 
-Copy the `podcast-insight-to-content/` folder into your Codex skills directory.
+To install from GitHub in Manus or another compatible skill platform, use the repository URL:
+
+```text
+https://github.com/Khloe0901/podcast-insight-to-content
+```
+
+For a local Codex installation, clone the repository or copy the root skill files into your skills directory.
 
 Common local destination:
 
 ```text
-~/.codex/skills/podcast-insight-to-content
+~/.codex/skills/podcast-insight-to-content/
 ```
+
+The nested `podcast-insight-to-content/` directory is retained as a conservative compatibility copy. New installers should use the root-level `SKILL.md`.
 
 ## Example Prompt
 
@@ -129,4 +139,3 @@ This skill is designed for that transformation.
 ## License
 
 MIT
-

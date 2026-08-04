@@ -1,0 +1,4 @@
+interface:
+  display_name: "播客灵感转内容"
+  short_description: "把零散播客灵感变成脚本、选题、标题和长期内容资产"
+  default_prompt: "Use $podcast-insight-to-content to turn these podcast keywords into content value judgment, output shape, scripts, titles, and insight cards."
